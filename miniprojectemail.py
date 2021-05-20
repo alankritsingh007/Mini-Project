@@ -8,11 +8,9 @@ print ("-"*60)
 print ("Mini Project: Voice based Email for Visually Impaired")
 print ("-"*60)
 
-
 tts = gTTS(text="Speak Now", lang='en',slow=False)
 ttsname=("sn.mp3") 
 tts.save(ttsname)
-
 
 tts = gTTS(text="Mini Project: Voice based Email for Visually Impaired", lang='en',slow=False)
 ttsname=("a.mp3") 
@@ -22,7 +20,6 @@ os.remove(ttsname)
 
 login = os.getlogin
 print ("You are logging from : "+login())
-
 
 recognizer=sr.Recognizer()
 dict={'attherate':'@','underscore':'_','dot':'.','comma':',','hyphen':'-'}
